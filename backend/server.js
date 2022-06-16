@@ -10,7 +10,7 @@ const app = express()
 app.use (express.json())
 app.use(cors())
 app.use (express.urlencoded({extended: false}))
-const port = process.env.PORT || 4000
+//const port = process.env.PORT || 4000
 
 
 app.use('/', require('./Routes/homeroute') )
@@ -30,6 +30,6 @@ if (process.env.NODE_ENV === 'production') {
 
 
 
-app.listen (port , ()=>{
+app.listen (process.env.PORT || 3000 , ()=>{
     console.log(`listening on port ${port} `);
 })
