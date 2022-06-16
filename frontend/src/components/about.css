@@ -1,0 +1,11 @@
+.about{
+    background-color: #131921;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    line-height: 1px;
+    
+}

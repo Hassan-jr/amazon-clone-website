@@ -1,0 +1,73 @@
+.card_container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #ffffff;
+}
+
+/* IMAGES **************************************** */
+.cardpics{
+    width: 300px;
+    flex: 2;
+    padding: 20px;
+}
+
+
+/* DETAIS ************************************************ */
+.card_details{
+ 
+   flex: 2;
+   padding: 20px;
+}
+.card_details_header{
+    color: rgb(113, 113, 223);
+}
+.card_list{
+    font-weight : bold;
+    font-size : 13px;
+}
+.lineHieght{
+    lineHieght: 10px;
+}
+
+/* price and buy ****************************** */
+.card_price{
+flex: 1;
+padding: 20px;
+border: 1px solid rgb(121, 115, 115);
+border-radius: 20px;
+}
+.align{
+    display: flex;
+    align-items: center;
+    color: rgb(184, 184, 243);
+    font-weight: bold;
+    font-size: 10px;
+}
+.align2{
+   
+    color: rgb(184, 184, 243);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 650px){
+    .card_container{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-color: #ffffff;
+    }
+    .cardpics{
+        width: 100%;
+       
+    }
+    .card_price{
+       width: 250px;
+       margin-left: 10px;
+    }
+}

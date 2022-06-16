@@ -1,0 +1,76 @@
+.mainCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 228, 228);
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 3px;
+  
+}
+.imgDiv{
+    background-color: #FFFFFF; 
+}
+.cardimg{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+.cardDes{
+    background-color: #F8F8F8; 
+    width: 295px;
+    padding-left: 5px;
+    
+}
+.star_p{
+    display: flex;
+    align-items: center;
+}
+.carddes{
+ line-height: 10px; 
+}
+/* products */
+.allcards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.products{
+    background-color:#ffffff ;
+}
+.star{
+    color: #FFA41C;
+}
+.price{
+    font-weight: bold;
+    color: #B14245;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 600px){
+    .allcards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainCard{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid rgb(233, 228, 228);
+        width: 100%;
+       
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .cardimg{
+        width: 150px;
+        height: 200px;
+        object-fit: contain;
+    }
+}

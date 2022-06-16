@@ -1,0 +1,12 @@
+.btn{
+    margin-top: 10px;
+    background-color: #F7CA00;
+    width: 200px;
+    height: 30px;
+    color: black;
+    border: none;
+    border-radius: 40px;
+}
+.btn:hover{
+    background-color: #ffda33;
+}

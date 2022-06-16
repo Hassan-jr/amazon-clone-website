@@ -1,0 +1,51 @@
+.mainCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-around;
+}
+.cartitems{
+    padding: 20px;
+    flex: 3.2;
+    background-color: #ffffff;
+   
+}
+.subtotal{
+    margin: 10px;
+    padding: 10px;
+    flex: 0.8;
+    background-color: #ffffff;
+    height: 200px;
+}
+.shoppincart_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.cartitems_map{
+    position: relative;
+}
+.subtotal_bottom{
+    position: absolute;
+    right:   5px;
+    margin-top: -10px;
+
+}
+@media only screen and (max-width:600px){
+
+    .mainCart{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 20px;
+    }
+    .cartitems{
+        flex: 1;
+        width: 90%;
+    }
+    .subtotal{
+        flex: 1;
+        width: 90vw;
+        margin-right: 20px;
+    }
+}
