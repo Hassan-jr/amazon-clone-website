@@ -14,7 +14,7 @@ app.use (express.urlencoded({extended: false}))
 const port =   process.env.PORT || 4000
 
 
-app.use('/', require('./Routes/homeroute') )
+app.use('/home', require('./Routes/homeroute') )
 
 // Serve frontend
 if (process.env.NODE_ENV === 'production') {
