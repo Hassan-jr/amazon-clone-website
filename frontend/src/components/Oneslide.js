@@ -76,7 +76,7 @@ size = 4;
 {/* slides 2 */}
     <div className='oneslide'>
     <h2>New Arrivals</h2>
-    <Slider  {...settings}>
+    {/* <Slider  {...settings}>
             { Shoes.length &&  Shoes.map(phone=> {
                 return (
                     <Link to = "/products">
@@ -85,7 +85,7 @@ size = 4;
             
                 )
             }  )}
-       </Slider>
+       </Slider> */}
    
     </div>
     </div>
