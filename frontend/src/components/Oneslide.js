@@ -8,6 +8,7 @@ import Slider from "react-slick";
 //import Phones from "../data/Phones"
 import { Link } from 'react-router-dom';
 import dataservice from '../features/alldata';
+import Nodata from './nodata';
 
 
 function Oneslide(prop) {
@@ -59,15 +60,17 @@ size = 4;
     <div className='oneslide'>
     <h2>Popular products in Wireless internationally</h2>
     <Slider  {...settings}>
-            {Phones.length && Phones.map(phone=> {
+            {Phones.length ? Phones.map(phone=> {
                 return (
                     <Link to = "/products">
-                      
                     <img className='phones' src={phone.image} alt="" />
                     </Link>
             
                 )
-            }  )}
+            })
+            :
+            <Nodata/>
+          }
        </Slider>
    
     </div>
@@ -75,14 +78,17 @@ size = 4;
     <div className='oneslide'>
     <h2>New Arrivals</h2>
     <Slider  {...settings}>
-            { Shoes.length &&  Shoes.map(phone=> {
+            { Shoes.length ?  Shoes.map(phone=> {
                 return (
                     <Link to = "/products">
                     <img className='phones' src={phone.image} alt="" />
                     </Link>
             
                 )
-            }  )}
+            }  )
+            :
+            <Nodata/>
+          }
        </Slider>
    
     </div>

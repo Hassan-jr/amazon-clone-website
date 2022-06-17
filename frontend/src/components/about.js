@@ -8,7 +8,7 @@ function about() {
           <h5>Abdiladif Hassan Adan</h5>
 
            <h3>Contacts</h3>
-            <p>Email :  <span className='text'>abdiladifhassan115@gmail@gmail.com</span></p>
+            <p>Email :  <span className='text'>abdiladifhassan115@gmail.com</span></p>
             <p>Phone NO :  <span className='text'>+254725151165</span></p>
     </div>
   )
