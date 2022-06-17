@@ -5,7 +5,7 @@ const API_URL = ''
 // Accessories
 const getAccessoriesData =async () => {
    try {
-    const response =   await axios.get(`${API_URL}/accessories`)
+    const response =   await axios.get(`${API_URL}/accessories/`)
     return  response.data
        
    } catch (error) {
@@ -16,7 +16,7 @@ const getAccessoriesData =async () => {
 // Electronics
 const getElectronicsData =async () => {
   try {
-   const response =   await axios.get(`${API_URL}/electronics`)
+   const response =   await axios.get(`${API_URL}/electronics/`)
    return  response.data
       
   } catch (error) {
@@ -27,7 +27,7 @@ const getElectronicsData =async () => {
 // Phones
 const getPhonesData =async () => {
       try {
-       const response =   await axios.get(`${API_URL}/phones`)
+       const response =   await axios.get(`${API_URL}/phones/`)
        return  response.data
           
       } catch (error) {
@@ -39,7 +39,7 @@ const getPhonesData =async () => {
     // shoes
 const getShoesData =async () => {
       try {
-       const response =   await axios.get(`${API_URL}/shoes`)
+       const response =   await axios.get(`${API_URL}/shoes/`)
        return  response.data
           
       } catch (error) {
