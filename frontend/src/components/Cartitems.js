@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import './Cartitems.css'
-
+import {  useDispatch } from 'react-redux'
+import {removeCart} from '../features/cart'
 
 function Cartitems(prop) {
 
@@ -10,7 +11,10 @@ function Handlechange(e){
   setQty(e.target.value)
 }
 
-
+const dispatch = useDispatch()
+function deleteitem (){
+       dispatch(removeCart(prop))
+}
 
   return (
     
@@ -45,7 +49,7 @@ function Handlechange(e){
                  <option value="7" key="7">7</option>
                  <option value="8" key="8">8</option>
             </select>
-            &nbsp;&nbsp; | &nbsp; &nbsp; <span>Delete</span>
+            &nbsp;&nbsp; | &nbsp; &nbsp; <span onClick={deleteitem}>Delete</span>
        </p>
        
             </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Dataservice from '../features/alldata'
 import Card from '../components/card'
+import Nodata from '../components/nodata'
 
 
 
@@ -22,10 +23,12 @@ setdata(prev => [...prev, ...data4,...data2, ...data3, ...data1])
 
   return (
     <div className="allcards">
-      
-      {data.map((item, index) =>
+      { data.length ?
+      data.map((item, index) =>
           <Card key = {index} {...item}  />
-      )}
+      ):
+      <Nodata />
+      }
     </div>
   )
 }

@@ -15,7 +15,7 @@ export const cart = createSlice({
             }
         },
         removeCart: (state, action)=>{
-         state.value =   state.value.map(item=> item._id != action.payload._id)
+         state.value =   state.value.map(item=> item._id !== action.payload._id)
         }
     }
 })

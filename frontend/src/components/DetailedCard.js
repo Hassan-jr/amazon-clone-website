@@ -59,16 +59,21 @@ size = 1;
   return (
     // css  on card.css
    <div className="products">
-        
-     {data.map((item, index) =>{
+       { data.length ?
+     data.map((item, index) =>{
       if (item._id === id){
         return (
             <DetailedCard2 key = {index} {...item} />
         )
       
        }
-      })}
-    
+      })
+      :
+      <div className="nodata">
+      <h1>Loading</h1>
+      <h3>PLEASE Wait</h3>
+      </div>
+     }
      <h2>Related Item</h2>
      <div >
      <Slider {...settings}>

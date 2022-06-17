@@ -31,5 +31,5 @@ if (process.env.NODE_ENV === 'production') {
 
 
 app.listen (process.env.PORT || 3000 , ()=>{
-    console.log(`listening on port ${port} `);
+    console.log(`listening on port ${process.env.PORT} `);
 })
