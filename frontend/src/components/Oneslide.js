@@ -53,14 +53,16 @@ size = 4;
         arrows : true,
         className: "slides1"
       };
+     
   return (
     <div>
     <div className='oneslide'>
     <h2>Popular products in Wireless internationally</h2>
     <Slider  {...settings}>
-            {Phones.map(phone=> {
+            {Phones.length && Phones.map(phone=> {
                 return (
                     <Link to = "/products">
+                      
                     <img className='phones' src={phone.image} alt="" />
                     </Link>
             
@@ -73,7 +75,7 @@ size = 4;
     <div className='oneslide'>
     <h2>New Arrivals</h2>
     <Slider  {...settings}>
-            {Shoes.map(phone=> {
+            { Shoes.length &&  Shoes.map(phone=> {
                 return (
                     <Link to = "/products">
                     <img className='phones' src={phone.image} alt="" />
