@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = ''
+const API_URL = 'https://amazonbyhassan.herokuapp.com'
 
 // Accessories
 const getAccessoriesData =async () => {
