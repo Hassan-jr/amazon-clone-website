@@ -1,10 +1,11 @@
 const path = require('path');
 const express = require('express')
-const dotenv = require('dotenv').config()
-// const connect = require('./config/db')
+const dotenv = require('dotenv')
 const cors = require('cors')
 
-//  connect();
+dotenv.config()
+
+
 
 const app = express()
 app.use (express.json())
