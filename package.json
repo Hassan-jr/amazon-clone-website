@@ -6,7 +6,7 @@
     "node": "16.15.0",
     "npm": "8.5.2"
   },
-  "main": "server.js",
+  "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
     "devStart": "nodemon backend/server.js",
