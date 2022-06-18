@@ -3,6 +3,7 @@
 }
 .imghaderslide{
     margin-bottom: -300px;
+    overflow-x: hidden;
 }
 
 .slides{
