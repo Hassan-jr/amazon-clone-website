@@ -1,4 +1,6 @@
-
+.haderslide{
+    overflow-x: hidden;
+}
 .imghaderslide{
     margin-bottom: -300px;
 }
