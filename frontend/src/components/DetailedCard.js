@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import dataservice from '../features/alldata'
 import DetailedCard2 from './DetailedCard2'
+import { SpinnerInfinity } from 'spinners-react';
 
 
 import "slick-carousel/slick/slick.css";
@@ -70,8 +71,9 @@ size = 1;
       })
       :
       <div className="nodata">
-      <h1>Loading</h1>
-      <h3>PLEASE Wait</h3>
+          < SpinnerInfinity size = {100} />
+      {/* <h1>Loading</h1>
+      <h3>PLEASE Wait</h3> */}
       </div>
      }
      <h2>Related Item</h2>
