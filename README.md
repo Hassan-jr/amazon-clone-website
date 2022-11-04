@@ -2,4 +2,4 @@
 Amazon Clone Website
 Link to the project https://amazonbyhassan.herokuapp.com
 
-*Everything in the project is built without using third party Libraries* 
+*Everything in the project is built from scratch* 
